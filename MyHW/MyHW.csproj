@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED0C2A03-F291-4AA9-AFC9-1BB7E056375E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyHW</RootNamespace>
+    <AssemblyName>MyHW</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="4. FrmDataSet 結構.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4. FrmDataSet 結構.designer.cs">
+      <DependentUpon>4. FrmDataSet 結構.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2. FrmCategoryProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2. FrmCategoryProducts.Designer.cs">
+      <DependentUpon>2. FrmCategoryProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3. FrmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3. FrmProducts.Designer.cs">
+      <DependentUpon>3. FrmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1. Frm標準練習.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1. Frm標準練習.Designer.cs">
+      <DependentUpon>1. Frm標準練習.cs</DependentUpon>
+    </Compile>
+    <Compile Include="5. FrmAdventureWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5. FrmAdventureWorks.designer.cs">
+      <DependentUpon>5. FrmAdventureWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6. FrmMyAlbum_V1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6. FrmMyAlbum_V1.designer.cs">
+      <DependentUpon>6. FrmMyAlbum_V1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6. FrmMyAlbum_V2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6. FrmMyAlbum_V2.designer.cs">
+      <DependentUpon>6. FrmMyAlbum_V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7. FrmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7. FrmCustomers.designer.cs">
+      <DependentUpon>7. FrmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="7. FrmLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7. FrmLogon.designer.cs">
+      <DependentUpon>7. FrmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AWDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AWDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD.Designer.cs">
+      <DependentUpon>CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAlbumDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="NWDataSet.cs">
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NWDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="4. FrmDataSet 結構.resx">
+      <DependentUpon>4. FrmDataSet 結構.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2. FrmCategoryProducts.resx">
+      <DependentUpon>2. FrmCategoryProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3. FrmProducts.resx">
+      <DependentUpon>3. FrmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1. Frm標準練習.resx">
+      <DependentUpon>1. Frm標準練習.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5. FrmAdventureWorks.resx">
+      <DependentUpon>5. FrmAdventureWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6. FrmMyAlbum_V1.resx">
+      <DependentUpon>6. FrmMyAlbum_V1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6. FrmMyAlbum_V2.resx">
+      <DependentUpon>6. FrmMyAlbum_V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7. FrmCustomers.resx">
+      <DependentUpon>7. FrmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7. FrmLogon.resx">
+      <DependentUpon>7. FrmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD.resx">
+      <DependentUpon>CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="AWDataSet.xsc">
+      <DependentUpon>AWDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AWDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AWDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AWDataSet.xss">
+      <DependentUpon>AWDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyAlbumDataSet.xsc">
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="MyAlbumDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyAlbumDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="MyAlbumDataSet.xss">
+      <DependentUpon>MyAlbumDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="NWDataSet.xsc">
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NWDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NWDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NWDataSet.xss">
+      <DependentUpon>NWDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
