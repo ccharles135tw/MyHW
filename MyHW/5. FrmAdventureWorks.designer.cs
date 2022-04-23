@@ -1,5 +1,5 @@
 ﻿
-namespace MyHomeWork
+namespace MyHW
 {
     partial class FrmAdventureWorks
     {
@@ -84,6 +84,7 @@ namespace MyHomeWork
             this.productPhotoBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.productPhotoBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.productPhotoBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
+            this.productPhotoBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.productPhotoBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -97,14 +98,14 @@ namespace MyHomeWork
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.productPhotoBindingNavigatorSaveItem});
-            this.productPhotoBindingNavigator.Location = new System.Drawing.Point(281, 121);
+            this.productPhotoBindingNavigator.Location = new System.Drawing.Point(375, 151);
             this.productPhotoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.productPhotoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.productPhotoBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.productPhotoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.productPhotoBindingNavigator.Name = "productPhotoBindingNavigator";
             this.productPhotoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.productPhotoBindingNavigator.Size = new System.Drawing.Size(270, 25);
+            this.productPhotoBindingNavigator.Size = new System.Drawing.Size(335, 31);
             this.productPhotoBindingNavigator.TabIndex = 0;
             this.productPhotoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -114,7 +115,7 @@ namespace MyHomeWork
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "加入新的";
             // 
             // productPhotoBindingSource
@@ -131,7 +132,7 @@ namespace MyHomeWork
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(34, 28);
             this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "項目總數";
             // 
@@ -141,7 +142,7 @@ namespace MyHomeWork
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "刪除";
             // 
             // bindingNavigatorMoveFirstItem
@@ -150,7 +151,7 @@ namespace MyHomeWork
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "移到最前面";
             // 
             // bindingNavigatorMovePreviousItem
@@ -159,13 +160,13 @@ namespace MyHomeWork
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "移到上一個";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -173,14 +174,14 @@ namespace MyHomeWork
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "目前的位置";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -188,7 +189,7 @@ namespace MyHomeWork
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "移到下一個";
             // 
             // bindingNavigatorMoveLastItem
@@ -197,20 +198,20 @@ namespace MyHomeWork
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "移到最後面";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // productPhotoBindingNavigatorSaveItem
             // 
             this.productPhotoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.productPhotoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("productPhotoBindingNavigatorSaveItem.Image")));
             this.productPhotoBindingNavigatorSaveItem.Name = "productPhotoBindingNavigatorSaveItem";
-            this.productPhotoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.productPhotoBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.productPhotoBindingNavigatorSaveItem.Text = "儲存資料";
             this.productPhotoBindingNavigatorSaveItem.Click += new System.EventHandler(this.productPhotoBindingNavigatorSaveItem_Click);
             // 
@@ -228,53 +229,68 @@ namespace MyHomeWork
             this.productPhotoDataGridView.DataSource = this.productPhotoBindingSource;
             this.productPhotoDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productPhotoDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.productPhotoDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.productPhotoDataGridView.Name = "productPhotoDataGridView";
+            this.productPhotoDataGridView.RowHeadersWidth = 51;
             this.productPhotoDataGridView.RowTemplate.Height = 24;
-            this.productPhotoDataGridView.Size = new System.Drawing.Size(834, 392);
+            this.productPhotoDataGridView.Size = new System.Drawing.Size(1112, 490);
             this.productPhotoDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductPhotoID";
             this.dataGridViewTextBoxColumn1.HeaderText = "ProductPhotoID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.DataPropertyName = "ThumbNailPhoto";
             this.dataGridViewImageColumn1.HeaderText = "ThumbNailPhoto";
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "ThumbnailPhotoFileName";
             this.dataGridViewTextBoxColumn2.HeaderText = "ThumbnailPhotoFileName";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
             this.dataGridViewImageColumn2.DataPropertyName = "LargePhoto";
             this.dataGridViewImageColumn2.HeaderText = "LargePhoto";
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "LargePhotoFileName";
             this.dataGridViewTextBoxColumn3.HeaderText = "LargePhotoFileName";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "ModifiedDate";
             this.dataGridViewTextBoxColumn4.HeaderText = "ModifiedDate";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(433, 63);
+            this.button2.Location = new System.Drawing.Point(577, 79);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 29);
             this.button2.TabIndex = 98;
             this.button2.Text = "排序";
             this.button2.UseVisualStyleBackColor = true;
@@ -285,29 +301,27 @@ namespace MyHomeWork
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("新細明體", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(11, 21);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(15, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 14);
+            this.label3.Size = new System.Drawing.Size(140, 17);
             this.label3.TabIndex = 97;
             this.label3.Text = "AWDataSetModel";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(117, 121);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(156, 151);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 12);
+            this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 96;
             this.label4.Text = "label4";
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(233, 109);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
+            this.button16.Location = new System.Drawing.Point(311, 136);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(46, 39);
+            this.button16.Size = new System.Drawing.Size(61, 49);
             this.button16.TabIndex = 95;
             this.button16.Text = ">>";
             this.button16.UseVisualStyleBackColor = true;
@@ -315,10 +329,10 @@ namespace MyHomeWork
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(183, 109);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
+            this.button15.Location = new System.Drawing.Point(244, 136);
+            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(46, 39);
+            this.button15.Size = new System.Drawing.Size(61, 49);
             this.button15.TabIndex = 94;
             this.button15.Text = ">";
             this.button15.UseVisualStyleBackColor = true;
@@ -326,10 +340,10 @@ namespace MyHomeWork
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(64, 109);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
+            this.button14.Location = new System.Drawing.Point(85, 136);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(46, 39);
+            this.button14.Size = new System.Drawing.Size(61, 49);
             this.button14.TabIndex = 93;
             this.button14.Text = "<";
             this.button14.UseVisualStyleBackColor = true;
@@ -337,10 +351,10 @@ namespace MyHomeWork
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(14, 109);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
+            this.button13.Location = new System.Drawing.Point(19, 136);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(46, 39);
+            this.button13.Size = new System.Drawing.Size(61, 49);
             this.button13.TabIndex = 92;
             this.button13.Text = "<<";
             this.button13.UseVisualStyleBackColor = true;
@@ -349,26 +363,29 @@ namespace MyHomeWork
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(571, 63);
+            this.comboBox1.Location = new System.Drawing.Point(761, 79);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(247, 20);
+            this.comboBox1.Size = new System.Drawing.Size(328, 23);
             this.comboBox1.TabIndex = 91;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(534, 68);
+            this.label2.Location = new System.Drawing.Point(712, 85);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 12);
+            this.label2.Size = new System.Drawing.Size(38, 15);
             this.label2.TabIndex = 90;
             this.label2.Text = "Year:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(277, 63);
+            this.button1.Location = new System.Drawing.Point(369, 79);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 23);
+            this.button1.Size = new System.Drawing.Size(183, 29);
             this.button1.TabIndex = 88;
             this.button1.Text = " 某 日期區間 的腳踏車";
             this.button1.UseVisualStyleBackColor = true;
@@ -377,35 +394,39 @@ namespace MyHomeWork
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(132, 70);
+            this.label1.Location = new System.Drawing.Point(176, 88);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(11, 12);
+            this.label1.Size = new System.Drawing.Size(15, 15);
             this.label1.TabIndex = 89;
             this.label1.Text = "~";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(149, 66);
+            this.dateTimePicker2.Location = new System.Drawing.Point(199, 82);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(108, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(143, 25);
             this.dateTimePicker2.TabIndex = 87;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(17, 66);
+            this.dateTimePicker1.Location = new System.Drawing.Point(23, 82);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(108, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(143, 25);
             this.dateTimePicker1.TabIndex = 86;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.productPhotoDataGridView);
-            this.panel1.Location = new System.Drawing.Point(-4, 168);
+            this.panel1.Location = new System.Drawing.Point(-5, 210);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 392);
+            this.panel1.Size = new System.Drawing.Size(1112, 490);
             this.panel1.TabIndex = 99;
             // 
             // productPhotoTableAdapter
@@ -420,9 +441,9 @@ namespace MyHomeWork
             // 
             // FrmAdventureWorks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 559);
+            this.ClientSize = new System.Drawing.Size(1107, 699);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -438,7 +459,7 @@ namespace MyHomeWork
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.productPhotoBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAdventureWorks";
             this.Text = "FrmAdventureWorks";
             this.Load += new System.EventHandler(this.FrmAdventureWorks_Load);

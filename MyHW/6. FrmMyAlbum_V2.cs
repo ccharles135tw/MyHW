@@ -19,6 +19,7 @@ namespace MyHW
         {
             InitializeComponent();
             initial();
+            crud();
             comboBox1.SelectedIndex = 0;
             this.flowLayoutPanel3.AllowDrop = true;
             this.flowLayoutPanel3.DragEnter += FlowLayoutPanel3_DragEnter;
@@ -171,6 +172,14 @@ namespace MyHW
                     }
                 }
             }
+        }
+        void crud()
+        {
+            splitContainer4.Panel2.Controls.Clear();
+            CRUD f = new CRUD();
+            f.TopLevel = false;
+            splitContainer4.Panel2.Controls.Add(f);
+            f.Show();
         }
     }
 }

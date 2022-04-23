@@ -40,7 +40,9 @@ namespace MyHW
             this.orderByToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerIDAscToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerIDDescToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupByToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupByToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.countryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.無ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +88,7 @@ namespace MyHW
             this.toolStripMenuItem2,
             this.toolStripMenuItem3,
             this.orderByToolStripMenuItem,
-            this.groupByToolStripMenuItem});
+            this.groupByToolStripMenuItem1});
             this.contextMenuStrip2.Name = "contextMenuStrip1";
             this.contextMenuStrip2.Size = new System.Drawing.Size(211, 152);
             // 
@@ -134,11 +136,28 @@ namespace MyHW
             this.customerIDDescToolStripMenuItem.Text = "CustomerID Desc";
             this.customerIDDescToolStripMenuItem.Click += new System.EventHandler(this.customerIDDescToolStripMenuItem_Click);
             // 
-            // groupByToolStripMenuItem
+            // groupByToolStripMenuItem1
             // 
-            this.groupByToolStripMenuItem.Name = "groupByToolStripMenuItem";
-            this.groupByToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.groupByToolStripMenuItem.Text = "Group by";
+            this.groupByToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.countryToolStripMenuItem,
+            this.無ToolStripMenuItem});
+            this.groupByToolStripMenuItem1.Name = "groupByToolStripMenuItem1";
+            this.groupByToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.groupByToolStripMenuItem1.Text = "Group by";
+            // 
+            // countryToolStripMenuItem
+            // 
+            this.countryToolStripMenuItem.Name = "countryToolStripMenuItem";
+            this.countryToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.countryToolStripMenuItem.Text = "Country";
+            this.countryToolStripMenuItem.Click += new System.EventHandler(this.countryToolStripMenuItem_Click);
+            // 
+            // 無ToolStripMenuItem
+            // 
+            this.無ToolStripMenuItem.Name = "無ToolStripMenuItem";
+            this.無ToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.無ToolStripMenuItem.Text = "無";
+            this.無ToolStripMenuItem.Click += new System.EventHandler(this.無ToolStripMenuItem_Click);
             // 
             // FrmCustomers
             // 
@@ -170,6 +189,8 @@ namespace MyHW
         private System.Windows.Forms.ToolStripMenuItem orderByToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerIDAscToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerIDDescToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem groupByToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem groupByToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem countryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 無ToolStripMenuItem;
     }
 }

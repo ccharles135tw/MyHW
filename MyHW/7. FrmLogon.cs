@@ -1,4 +1,5 @@
-﻿using MyHW.Properties;
+﻿using MyHW;
+using MyHW.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,13 @@ namespace MyHomeWork
                     if (reader.HasRows)
                     {
                         MessageBox.Show("Log On 成功");
+                        HomePage f = new HomePage();
+                        this.Visible = false;
+                        f.ShowDialog();
+                        if(f.DialogResult == DialogResult.Cancel)
+                        {
+                            this.Visible = true;
+                        }
                     }
                     else
                     {
