@@ -140,8 +140,6 @@
     <Compile Include="ADO.NET\0. HomePage.Designer.cs">
       <DependentUpon>0. HomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="LinqLabs\NWDataSet.cs" />
-    <Compile Include="LinqLabs\NWDataSetTableAdapters.cs" />
     <Compile Include="LINQ\Frm作業_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +270,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LinqLabs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

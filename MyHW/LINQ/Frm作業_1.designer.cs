@@ -458,11 +458,8 @@ namespace MyHomeWork
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource bindingSource1;
-        //private LinqLabs.NWDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
-        private LinqLabs.NWDataSet nwDataSet1;
         private MyHW.NWDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter1;
         private MyHW.NWDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
         private MyHW.NWDataSet nwDataSet2;
-        //private LinqLabs.NWDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter1;
     }
 }
