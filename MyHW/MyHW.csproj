@@ -63,58 +63,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="4. FrmDataSet 結構.cs">
+    <Compile Include="ADO.NET\4. FrmDataSet 結構.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="4. FrmDataSet 結構.designer.cs">
+    <Compile Include="ADO.NET\4. FrmDataSet 結構.designer.cs">
       <DependentUpon>4. FrmDataSet 結構.cs</DependentUpon>
     </Compile>
-    <Compile Include="2. FrmCategoryProducts.cs">
+    <Compile Include="ADO.NET\2. FrmCategoryProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2. FrmCategoryProducts.Designer.cs">
+    <Compile Include="ADO.NET\2. FrmCategoryProducts.Designer.cs">
       <DependentUpon>2. FrmCategoryProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="3. FrmProducts.cs">
+    <Compile Include="ADO.NET\3. FrmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="3. FrmProducts.Designer.cs">
+    <Compile Include="ADO.NET\3. FrmProducts.Designer.cs">
       <DependentUpon>3. FrmProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="1. Frm標準練習.cs">
+    <Compile Include="ADO.NET\1. Frm標準練習.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="1. Frm標準練習.Designer.cs">
+    <Compile Include="ADO.NET\1. Frm標準練習.Designer.cs">
       <DependentUpon>1. Frm標準練習.cs</DependentUpon>
     </Compile>
-    <Compile Include="5. FrmAdventureWorks.cs">
+    <Compile Include="ADO.NET\5. FrmAdventureWorks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="5. FrmAdventureWorks.designer.cs">
+    <Compile Include="ADO.NET\5. FrmAdventureWorks.designer.cs">
       <DependentUpon>5. FrmAdventureWorks.cs</DependentUpon>
     </Compile>
-    <Compile Include="6. FrmMyAlbum_V1.cs">
+    <Compile Include="ADO.NET\6. FrmMyAlbum_V1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="6. FrmMyAlbum_V1.designer.cs">
+    <Compile Include="ADO.NET\6. FrmMyAlbum_V1.designer.cs">
       <DependentUpon>6. FrmMyAlbum_V1.cs</DependentUpon>
     </Compile>
-    <Compile Include="6. FrmMyAlbum_V2.cs">
+    <Compile Include="ADO.NET\6. FrmMyAlbum_V2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="6. FrmMyAlbum_V2.designer.cs">
+    <Compile Include="ADO.NET\6. FrmMyAlbum_V2.designer.cs">
       <DependentUpon>6. FrmMyAlbum_V2.cs</DependentUpon>
     </Compile>
-    <Compile Include="7. FrmCustomers.cs">
+    <Compile Include="ADO.NET\7. FrmCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="7. FrmCustomers.designer.cs">
+    <Compile Include="ADO.NET\7. FrmCustomers.designer.cs">
       <DependentUpon>7. FrmCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="7. FrmLogon.cs">
+    <Compile Include="ADO.NET\7. FrmLogon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="7. FrmLogon.designer.cs">
+    <Compile Include="ADO.NET\7. FrmLogon.designer.cs">
       <DependentUpon>7. FrmLogon.cs</DependentUpon>
     </Compile>
     <Compile Include="AWDataSet.Designer.cs">
@@ -122,23 +122,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AWDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CRUD.cs">
+    <Compile Include="ADO.NET\CRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CRUD.Designer.cs">
+    <Compile Include="ADO.NET\CRUD.Designer.cs">
       <DependentUpon>CRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="8. Quiz.cs">
+    <Compile Include="ADO.NET\8. Quiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="8. Quiz.Designer.cs">
+    <Compile Include="ADO.NET\8. Quiz.Designer.cs">
       <DependentUpon>8. Quiz.cs</DependentUpon>
     </Compile>
-    <Compile Include="0. HomePage.cs">
+    <Compile Include="ADO.NET\0. HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="0. HomePage.Designer.cs">
+    <Compile Include="ADO.NET\0. HomePage.Designer.cs">
       <DependentUpon>0. HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinqLabs\NWDataSet.cs" />
+    <Compile Include="LinqLabs\NWDataSetTableAdapters.cs" />
+    <Compile Include="LINQ\Frm作業_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINQ\Frm作業_1.designer.cs">
+      <DependentUpon>Frm作業_1.cs</DependentUpon>
     </Compile>
     <Compile Include="MyAlbumDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -156,41 +164,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="4. FrmDataSet 結構.resx">
+    <EmbeddedResource Include="ADO.NET\4. FrmDataSet 結構.resx">
       <DependentUpon>4. FrmDataSet 結構.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2. FrmCategoryProducts.resx">
+    <EmbeddedResource Include="ADO.NET\2. FrmCategoryProducts.resx">
       <DependentUpon>2. FrmCategoryProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="3. FrmProducts.resx">
+    <EmbeddedResource Include="ADO.NET\3. FrmProducts.resx">
       <DependentUpon>3. FrmProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="1. Frm標準練習.resx">
+    <EmbeddedResource Include="ADO.NET\1. Frm標準練習.resx">
       <DependentUpon>1. Frm標準練習.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="5. FrmAdventureWorks.resx">
+    <EmbeddedResource Include="ADO.NET\5. FrmAdventureWorks.resx">
       <DependentUpon>5. FrmAdventureWorks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="6. FrmMyAlbum_V1.resx">
+    <EmbeddedResource Include="ADO.NET\6. FrmMyAlbum_V1.resx">
       <DependentUpon>6. FrmMyAlbum_V1.cs</DependentUpon>
     </EmbeddedResource>
-    <Resource Include="6. FrmMyAlbum_V2.resx">
+    <Resource Include="ADO.NET\6. FrmMyAlbum_V2.resx">
       <DependentUpon>6. FrmMyAlbum_V2.cs</DependentUpon>
     </Resource>
-    <EmbeddedResource Include="7. FrmCustomers.resx">
+    <EmbeddedResource Include="ADO.NET\7. FrmCustomers.resx">
       <DependentUpon>7. FrmCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="7. FrmLogon.resx">
+    <EmbeddedResource Include="ADO.NET\7. FrmLogon.resx">
       <DependentUpon>7. FrmLogon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="8. Quiz.resx">
+    <EmbeddedResource Include="ADO.NET\8. Quiz.resx">
       <DependentUpon>8. Quiz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRUD.resx">
+    <EmbeddedResource Include="ADO.NET\CRUD.resx">
       <DependentUpon>CRUD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="0. HomePage.resx">
+    <EmbeddedResource Include="ADO.NET\0. HomePage.resx">
       <DependentUpon>0. HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINQ\Frm作業_1.resx">
+      <DependentUpon>Frm作業_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
