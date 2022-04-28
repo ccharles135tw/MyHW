@@ -120,11 +120,7 @@ namespace MyHomeWork
         bool boolean = true; 
         private void button13_Click_1(object sender, EventArgs e)
         {
-            if (value < 0)
-            {
-                value = 0;
-            }
-            else if (value > nwDataSet2.Products.Count - 1)
+            if (value > nwDataSet2.Products.Count - 1)
             {
                 value = nwDataSet2.Products.Count - 1;
             }
@@ -144,10 +140,6 @@ namespace MyHomeWork
             if (value < 0)
             {
                 value = 0;
-            }
-            else if (value > nwDataSet2.Products.Count - 1)
-            {
-                value = nwDataSet2.Products.Count - 1;
             }
             if (boolean)
             {
