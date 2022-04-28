@@ -20,7 +20,7 @@ namespace MyHW
             LoadData();
             
         }
-        void NodeSelected()
+        void NodeSelected_Son()
         {
             try
             {
@@ -29,6 +29,37 @@ namespace MyHW
                     conn.Open();
                     SqlCommand command = new SqlCommand();
                     command.CommandText = $"select * from Customers where City = '{this.treeView1.SelectedNode.Text}'";
+                    command.Connection = conn;
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    this.dataGridView1.DataSource = null;
+                    this.dataGridView1.Rows.Clear();
+                    int cnt = 0;
+                    while (reader.Read())
+                    {
+                        dataGridView1.Rows.Add();
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            dataGridView1.Rows[cnt].Cells[i].Value = reader[i];
+                        }
+                        cnt++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        void NodeSelected_Father()
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(Settings.Default.MyNWConnectionString))
+                {
+                    conn.Open();
+                    SqlCommand command = new SqlCommand();
+                    command.CommandText = $"select * from Customers where Country = '{this.treeView1.SelectedNode.Text}'";
                     command.Connection = conn;
 
                     SqlDataReader reader = command.ExecuteReader();
@@ -93,7 +124,14 @@ namespace MyHW
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            NodeSelected();
+            if(treeView1.SelectedNode.Level == 0)
+            {
+                NodeSelected_Father();
+            }
+            else
+            {
+                NodeSelected_Son();
+            }
         }
     }
 }

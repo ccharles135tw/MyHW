@@ -120,8 +120,9 @@ namespace MyHW
                         PictureBox p = new PictureBox()
                         {
                             Image = Image.FromStream(ms),
-                            SizeMode = PictureBoxSizeMode.StretchImage
-                        };
+                            SizeMode = PictureBoxSizeMode.StretchImage,
+                            BorderStyle = BorderStyle.Fixed3D
+                    };
                         this.flowLayoutPanel1.Controls.Add(p);
                     }
                 }
