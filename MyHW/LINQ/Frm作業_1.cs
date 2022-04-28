@@ -117,7 +117,7 @@ namespace MyHomeWork
             return false;
         }
         int value = 0, value_old = 0;
-        bool boolean = true;
+        bool boolean = true; 
         private void button13_Click_1(object sender, EventArgs e)
         {
             if (value < 0)
