@@ -134,9 +134,7 @@ namespace MyHomeWork
                 boolean = !boolean;
             }
             int b = int.Parse(textBox1.Text);
-            var a = from i in nwDataSet2.Products
-                    select i;
-            this.dataGridView1.DataSource = a.Skip(value).Take(b).ToList();
+            this.dataGridView1.DataSource = nwDataSet2.Products.Skip(value).Take(b).ToList();
             value += b;
             value_old = b;
         }
@@ -158,9 +156,7 @@ namespace MyHomeWork
             }
             int b = int.Parse(textBox1.Text);
             value -= b;
-            var a = from i in nwDataSet2.Products
-                    select i;
-            this.dataGridView1.DataSource = a.Skip(value).Take(b).ToList();
+            this.dataGridView1.DataSource = nwDataSet2.Products.Skip(value).Take(b).ToList();
             value_old = b;
         }
     }
