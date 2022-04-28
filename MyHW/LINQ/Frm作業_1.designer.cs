@@ -57,6 +57,7 @@ namespace MyHomeWork
             this.order_DetailsTableAdapter1 = new MyHW.NWDataSetTableAdapters.Order_DetailsTableAdapter();
             this.ordersTableAdapter1 = new MyHW.NWDataSetTableAdapters.OrdersTableAdapter();
             this.nwDataSet2 = new MyHW.NWDataSet();
+            this.productsTableAdapter1 = new MyHW.NWDataSetTableAdapters.ProductsTableAdapter();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -214,7 +215,7 @@ namespace MyHomeWork
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("新細明體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(949, 261);
+            this.label3.Location = new System.Drawing.Point(524, 241);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(219, 14);
@@ -297,13 +298,14 @@ namespace MyHomeWork
             // 
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button13.ForeColor = System.Drawing.Color.Black;
-            this.button13.Location = new System.Drawing.Point(1405, 290);
+            this.button13.Location = new System.Drawing.Point(980, 270);
             this.button13.Margin = new System.Windows.Forms.Padding(5);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(137, 42);
             this.button13.TabIndex = 96;
             this.button13.Text = "下一頁";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click_1);
             // 
             // comboBox1
             // 
@@ -321,13 +323,14 @@ namespace MyHomeWork
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(1256, 290);
+            this.button12.Location = new System.Drawing.Point(831, 270);
             this.button12.Margin = new System.Windows.Forms.Padding(5);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(137, 42);
             this.button12.TabIndex = 97;
             this.button12.Text = "上一頁";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button4
             // 
@@ -345,7 +348,7 @@ namespace MyHomeWork
             // 
             this.textBox1.Font = new System.Drawing.Font("新細明體", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(1056, 294);
+            this.textBox1.Location = new System.Drawing.Point(631, 274);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 23);
@@ -357,7 +360,7 @@ namespace MyHomeWork
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(937, 298);
+            this.label1.Location = new System.Drawing.Point(525, 277);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 14);
@@ -401,14 +404,18 @@ namespace MyHomeWork
             this.nwDataSet2.DataSetName = "NWDataSet";
             this.nwDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // productsTableAdapter1
+            // 
+            this.productsTableAdapter1.ClearBeforeFill = true;
+            // 
             // Frm作業_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1531, 801);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.label2);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm作業_1";
             this.Text = "Frm作業_1";
@@ -461,5 +468,6 @@ namespace MyHomeWork
         private MyHW.NWDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter1;
         private MyHW.NWDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
         private MyHW.NWDataSet nwDataSet2;
+        private MyHW.NWDataSetTableAdapters.ProductsTableAdapter productsTableAdapter1;
     }
 }

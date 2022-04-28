@@ -17,28 +17,25 @@ namespace MyHomeWork
             InitializeComponent();
             this.ordersTableAdapter1.Fill(nwDataSet2.Orders);
             this.order_DetailsTableAdapter1.Fill(nwDataSet2.Order_Details);
+            this.productsTableAdapter1.Fill(nwDataSet2.Products);
             load_combobox_items();
         }
         void load_combobox_items()
         {
             var a = from i in nwDataSet2.Orders
-                    select new { i.OrderDate.Year };
+                    select i.OrderDate.Year;
 
             foreach (var i in a)
             {
-                if (comboBox1.Items.Contains(i.Year))
+                if (comboBox1.Items.Contains(i))
                 {
                     continue;
                 }
                 else
                 {
-                    comboBox1.Items.Add(i.Year);
+                    comboBox1.Items.Add(i);
                 }
             }
-        }
-        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -118,6 +115,38 @@ namespace MyHomeWork
                 }
             }
             return false;
+        }
+        int value = 0,value_old=0;
+
+        bool boolean = true;
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+            if (!boolean)
+            {
+                value += value_old;
+                boolean = !boolean;
+            }
+            int b = int.Parse(textBox1.Text);
+            var a = from i in nwDataSet2.Products
+                    select i;
+            this.dataGridView1.DataSource = a.Skip(value).Take(b).ToList();
+            value += b;
+            value_old = b;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (boolean)
+            {
+                value -= value_old;
+                boolean = !boolean;
+            }
+            int b = int.Parse(textBox1.Text);
+            value -= b;
+            var a = from i in nwDataSet2.Products
+                    select i;
+            this.dataGridView1.DataSource = a.Skip(value).Take(b).ToList();
+            value_old = b;
         }
     }
 }
