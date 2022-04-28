@@ -59,7 +59,7 @@ namespace MyHomeWork
         private void button6_Click(object sender, EventArgs e)
         {
             var a = from i in nwDataSet2.Orders
-                    where !i.IsShipRegionNull() && !i.IsShippedDateNull() && !i.IsShipPostalCodeNull()
+                    where valueNull(i.ItemArray)
                     select i;
             this.dataGridView1.DataSource = a.ToList();
 
@@ -67,7 +67,17 @@ namespace MyHomeWork
                     select j;
             this.dataGridView2.DataSource = b.ToList();
         }
-
+        bool valueNull(object[] x)
+        {
+            foreach(object i in x)
+            {
+                if (i is DBNull)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(@"c:\windows");
