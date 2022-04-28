@@ -147,10 +147,6 @@ namespace MyHomeWork
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (value < 0)
-            {
-                value = 0;
-            }
             if (boolean)
             {
                 value -= value_old;
@@ -160,6 +156,10 @@ namespace MyHomeWork
             value -= b;
             this.dataGridView1.DataSource = nwDataSet2.Products.Skip(value).Take(b).ToList();
             value_old = b;
+            if (value < 0)
+            {
+                value = 0;
+            }
         }
     }
 }
