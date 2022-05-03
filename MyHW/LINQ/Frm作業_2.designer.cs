@@ -53,6 +53,9 @@ namespace MyHomeWork
             this.button11 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.awDataSet1 = new MyHW.AWDataSet();
+            this.productPhotoTableAdapter1 = new MyHW.AWDataSetTableAdapters.ProductPhotoTableAdapter();
+            this.productPhotoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -66,6 +69,8 @@ namespace MyHomeWork
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.awDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productPhotoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -147,6 +152,7 @@ namespace MyHomeWork
             this.dataGridView1.RowTemplate.Height = 74;
             this.dataGridView1.Size = new System.Drawing.Size(599, 467);
             this.dataGridView1.TabIndex = 71;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // splitContainer2
             // 
@@ -175,7 +181,7 @@ namespace MyHomeWork
             this.label10.Location = new System.Drawing.Point(440, 175);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 22);
+            this.label10.Size = new System.Drawing.Size(24, 16);
             this.label10.TabIndex = 136;
             this.label10.Text = "年:";
             // 
@@ -186,7 +192,7 @@ namespace MyHomeWork
             this.comboBox3.Location = new System.Drawing.Point(519, 172);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(176, 30);
+            this.comboBox3.Size = new System.Drawing.Size(176, 24);
             this.comboBox3.TabIndex = 135;
             // 
             // splitContainer1
@@ -229,7 +235,7 @@ namespace MyHomeWork
             this.label8.Location = new System.Drawing.Point(440, 222);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 22);
+            this.label8.Size = new System.Drawing.Size(24, 16);
             this.label8.TabIndex = 132;
             this.label8.Text = "季:";
             // 
@@ -245,7 +251,7 @@ namespace MyHomeWork
             this.comboBox2.Location = new System.Drawing.Point(519, 222);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(176, 30);
+            this.comboBox2.Size = new System.Drawing.Size(176, 24);
             this.comboBox2.TabIndex = 131;
             // 
             // dateTimePicker2
@@ -253,7 +259,7 @@ namespace MyHomeWork
             this.dateTimePicker2.Location = new System.Drawing.Point(859, 116);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(244, 30);
+            this.dateTimePicker2.Size = new System.Drawing.Size(244, 22);
             this.dateTimePicker2.TabIndex = 130;
             // 
             // button3
@@ -266,6 +272,7 @@ namespace MyHomeWork
             this.button3.TabIndex = 81;
             this.button3.Text = "     區間腳踏車 ";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label7
             // 
@@ -273,7 +280,7 @@ namespace MyHomeWork
             this.label7.Location = new System.Drawing.Point(799, 122);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 22);
+            this.label7.Size = new System.Drawing.Size(15, 16);
             this.label7.TabIndex = 129;
             this.label7.Text = "~";
             // 
@@ -287,13 +294,14 @@ namespace MyHomeWork
             this.button5.TabIndex = 82;
             this.button5.Text = "     某年腳踏車 ";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(519, 114);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(244, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(244, 22);
             this.dateTimePicker1.TabIndex = 128;
             // 
             // button10
@@ -307,6 +315,7 @@ namespace MyHomeWork
             this.button10.TabIndex = 83;
             this.button10.Text = "     某季腳踏車  ? 有幾筆 ?";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label3
             // 
@@ -315,7 +324,7 @@ namespace MyHomeWork
             this.label3.Location = new System.Drawing.Point(435, 122);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 22);
+            this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 127;
             this.label3.Text = "區間:";
             // 
@@ -329,6 +338,7 @@ namespace MyHomeWork
             this.button11.TabIndex = 84;
             this.button11.Text = "     All 腳踏車 ";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label6
             // 
@@ -337,13 +347,27 @@ namespace MyHomeWork
             this.label6.Location = new System.Drawing.Point(64, 23);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(295, 22);
+            this.label6.Size = new System.Drawing.Size(196, 16);
             this.label6.TabIndex = 105;
             this.label6.Text = "LINQ to AdventureWorks DataSet";
             // 
+            // awDataSet1
+            // 
+            this.awDataSet1.DataSetName = "AWDataSet";
+            this.awDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productPhotoTableAdapter1
+            // 
+            this.productPhotoTableAdapter1.ClearBeforeFill = true;
+            // 
+            // productPhotoBindingSource
+            // 
+            this.productPhotoBindingSource.DataMember = "ProductPhoto";
+            this.productPhotoBindingSource.DataSource = this.awDataSet1;
+            // 
             // Frm作業_2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1462, 825);
             this.Controls.Add(this.splitContainer1);
@@ -365,6 +389,8 @@ namespace MyHomeWork
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.awDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productPhotoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,5 +419,8 @@ namespace MyHomeWork
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label6;
+        private MyHW.AWDataSet awDataSet1;
+        private MyHW.AWDataSetTableAdapters.ProductPhotoTableAdapter productPhotoTableAdapter1;
+        private System.Windows.Forms.BindingSource productPhotoBindingSource;
     }
 }
