@@ -140,6 +140,12 @@
     <Compile Include="ADO.NET\0. HomePage.Designer.cs">
       <DependentUpon>0. HomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="LINQ\Frm作業_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINQ\Frm作業_2.designer.cs">
+      <DependentUpon>Frm作業_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LINQ\Frm作業_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADO.NET\0. HomePage.resx">
       <DependentUpon>0. HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINQ\Frm作業_2.resx">
+      <DependentUpon>Frm作業_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LINQ\Frm作業_1.resx">
       <DependentUpon>Frm作業_1.cs</DependentUpon>
