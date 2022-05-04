@@ -106,9 +106,6 @@ namespace MyHomeWork
             ClearAll();
             int prod_count = dbcontext.Products.Count();
             int count = 0;
-            /*var a = from i in dbcontext.Products.AsEnumerable()
-                    orderby i.UnitPrice ascending
-                    group i by Price(prod_count, ref count);*/
             var a = dbcontext.Products.AsEnumerable().OrderBy(i => i.UnitPrice).GroupBy(i=>Price(prod_count, ref count));
             dataGridView1.DataSource = a.ToList();
             count = 0;
