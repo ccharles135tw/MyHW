@@ -43,11 +43,11 @@ namespace LinqLabs
         private void button36_Click(object sender, EventArgs e)
         {
             #region 搜尋 班級學生成績
-           
+
             // 
             // 共幾個 學員成績 ?						
 
-            // 找出 前面三個 的學員所有科目成績					
+            // 找出 前面三個 的學員所有科目成績
             // 找出 後面兩個 的學員所有科目成績					
 
             // 找出 Name 'aaa','bbb','ccc' 的學員國文英文科目成績						

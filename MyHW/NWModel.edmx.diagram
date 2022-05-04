@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="1cee2c056f9a4e549050672528cd0b79" Name="Diagram1">
-        <EntityTypeShape EntityType="NorthwindModel.Order_Detail" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Order_Detail" Width="1.5" PointX="2.5" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="NorthwindModel.Order" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="NorthwindModel.Product" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Product" Width="1.5" PointX="0.625" PointY="6.25" IsExpanded="true" />
         <AssociationConnector Association="NorthwindModel.FK_Order_Details_Orders" ManuallyRouted="false" />
         <AssociationConnector Association="NorthwindModel.FK_Order_Details_Products" ManuallyRouted="false" />
       </Diagram>
