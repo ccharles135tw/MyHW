@@ -25,7 +25,6 @@ namespace LinqLabs
                                             new Student{ Name = "ddd", Class = "CS_102", Chi = 80, Eng = 70, Math = 85, Gender = "Female" },
                                             new Student{ Name = "eee", Class = "CS_101", Chi = 80, Eng = 80, Math = 50, Gender = "Female" },
                                             new Student{ Name = "fff", Class = "CS_102", Chi = 80, Eng = 80, Math = 80, Gender = "Female" },
-
                                           };
             
             Random ran = new Random(int.Parse(DateTime.Now.ToString("HHmmssfff")));
