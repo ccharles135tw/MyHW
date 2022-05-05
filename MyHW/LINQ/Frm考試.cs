@@ -284,7 +284,7 @@ namespace LinqLabs
             foreach (var i in a)
             {
                 chart1.Series.Add(i.Eng_Score.ToString());
-                chart1.Series[i.Eng_Score.ToString()].Points.AddXY("分數出現次數比率",(decimal)i.Count/100);
+                chart1.Series[i.Eng_Score.ToString()].Points.AddXY("分數出現次數比率",((decimal)i.Count/100));
             }
         }
         NorthwindEntities dbcontext = new NorthwindEntities();
